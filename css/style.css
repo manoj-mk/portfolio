@@ -149,6 +149,7 @@ nav{
     margin: 10px;
     text-align: center;
     padding: 10px;
+    background-color: gainsboro;
 }
 .education-card h3{
     margin-bottom: 15px;
