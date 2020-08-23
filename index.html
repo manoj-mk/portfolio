@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Manoj Kale's Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- For-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -15,7 +17,7 @@
         </div>
         <div class="nav-links">
             <ul>
-                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#education-wrapper">EDUCATION</a></li>
                 <li><a href="#skills">SKILLS</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT ME</a></li>
@@ -34,6 +36,111 @@
     </div>
     <!-- Education -->
     <div id="education-wrapper">
+        <h2>EDUCATIONAL DETAILS</h2>
+        <div class="cards-wrapper">
+            <div id="degree-card" class="education-card" >
+                <h3>BTech-Computer Science</h3>
+                <p>MIT Academy of Engineering,Alandi</p>
+                <p>Savitribai Phule University</p>
+                <p>2017-2021</p>
+                <p>CGPA-8.1</p>
+            </div>
+            <div id="hsc-card" class="education-card">
+                <h3>HSC</h3>
+                <p>Maharashtra HS vidyalaya, Barshi</p>
+                <p>Maharashtra State Board</p>
+                <p>2015-2017</p>
+                <p>78.30%</p>
+            </div>
+            <div id="ssc-card" class="education-card">
+                <h3>SSC</h3>
+                <p>K.N.M.G.G Mitra Vidyalaya, Malegoan</p>
+                <p>Maharashtra State Board</p>
+                <p>2015</p>
+                <p>90.20%</p>
+            </div>
+        </div>
+    </div>
+    <hr class="hr-line" >
+    <!-- Skills -->
+    <div id="skills">
+        <h2>KEY SKILLS</h2>
+        <div class="skills-container">
+            <i class="devicon-python-plain-wordmark colored"></i>
+            <i class="devicon-cplusplus-plain-wordmark colored"></i>
+            <i class="devicon-c-plain-wordmark colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-mysql-plain-wordmark colored"></i>
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-git-plain colored"></i>
+            <i class="devicon-django-plain colored"></i>
+            <i class="devicon-bootstrap-plain colored"></i>
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+            <i class="devicon-react-original"></i>
+        </div>
+    </div>
+    <hr class="hr-line" >
+    <!-- Projects -->
+    <div id="projects">
+        <h2>PROJECTS</h2>
+        <div id="project-cards-wrapper">
+            <div id="project1" class="project-card" >
+                <div class="title">Covid Visualizer using React </div>
+                <div class="snap">
+                    <img src="./images/covid19.jpeg" alt="">
+                </div>
+                <p class="description" >I did this project as a part to use my React skills. In this project , the real time covid data is fetched from an API and is displayed beautifully on site.</p>
+            </div>
+            <div id="project2" class="project-card">
+                <div class="title">Ferries Wheel Animation using OpenGL</div>
+                <div class="snap">
+                    <img src="./images/ferries.png" alt="">
+                </div>
+                <p class="description">The project was about to create the ferries wheel animation in c++ using the OpenGL graphics library. The animation includes a giant rim having multiple cabins attached to it rotating in circular motion.</p>
+            </div>
+            <div id="project3" class="project-card">
+                <div class="title">Rain Prediction using ML</div>
+                <div class="snap">
+                    <img src="./images/ML.jpeg" alt="">
+                </div>
+                <p class="description">The prediction of rain based on provided parameters like humidity, temperature etc. The dataset contained columns like humidity, temperature, pressure and other with rain. The column rain contained binary values. As it is a classification problem the machine learning models Logistic Regression and Decision Tree are used to train preprocessed data. The project is done in Python using libraries like pandas, Numpy, Sklearn etc.</p>
+            </div>
+            <div id="project4" class="project-card" >
+                <div class="title">Child welfare donation website</div>
+                <div class="snap">
+                    <img src="./images/child-welfare.jpeg" alt="">
+                </div>
+                <p class="description" >The project was about developing interactive website for collecting donations for children. I worked on developing a front end</p>
+            </div>
+            <div id="project5" class="project-card" >
+                <div class="title">Playlists of music player</div>
+                <div class="snap">
+                    <img  src="./images/mysql.png" alt="">
+                </div>
+                <p class="description" >The project was a part of the DBMS mini project. We created a simple UI where user can create, update, delete a playlist, and add songs to the playlist.</p>
+            </div>
+        </div>
+    </div>
+    <hr class="hr-line" >
+    <!-- Contact -->
+    <div id="contact-wrapper">
+        <h2>REACH ME</h2>
+        <div id="contact">
+            <div class="profile-photo">
+                <img src="./images/manoj.jpeg" alt="">
+            </div>
+            <h3>Manoj Kale</h3>
+            <p>manojkale.coder@gmail.com</p>
+            <ul>
+                <li><a target="_blank" href="https://in.linkedin.com/in/manoj-kale-666a31168"><i class="devicon-linkedin-plain colored"></i></a>
+                </li>
+                <li><a target="_blank" href="https://github.com/manoj-mk"><i class="devicon-github-plain colored"></i></a>
+                </li>
+                <li><a target="_blank" href="https://www.instagram.com/manoj__kale/"><i class="devicon-facebook-plain colored"></i>   </a>
+                </li>
+            </ul>
+        </div>
     </div>
     <script src="./vendor/jquery/jquery.min.js"></script>
     <script src="./js/script.js"></script>
