@@ -1,3 +1,9 @@
+/* MOBILE FIRST STYLESHEET */
+/* root settings */
+:root{
+    --main-bg-color:rgb(33, 231, 165);
+    --secondary-bg-color:rgb(41, 248, 179);
+}
 /*--------For All---------*/
 body,*{
     margin: 0;
@@ -7,7 +13,7 @@ body,*{
 
 nav{
     position: relative;
-    background-color: rgb(33, 231, 165);
+    background-color: var(--main-bg-color);
 }
 
 #hamburger{
@@ -25,9 +31,11 @@ nav{
 .nav-links{
     width: 100%;
     height: 0;
-    background-color: rgb(41, 248, 179);
+    background-color: var(--secondary-bg-color);
     overflow: hidden;
     transition: height .3s linear;
+    position: absolute;
+    z-index: 1;
 }
 .height180px{
     height: 180px;
@@ -56,7 +64,7 @@ nav{
         overflow: hidden;
         width: fit-content;
         position: static;
-        background-color: rgb(33, 231, 165);
+        background-color: var(--main-bg-color);
         margin-left: auto;
     }
     .nav-links a{
@@ -70,9 +78,7 @@ nav{
         border-bottom: 2px solid rgba(0, 0, 0, 0.9);
         background-color: unset;
     }
-    .nav-links a:visited{
-        color: brown;
-    }
+
     .nav-links li{
         margin: 0 10px;
     }
@@ -85,4 +91,54 @@ nav{
     .nav-links ul{
         flex-direction: row;
     }
+}
+
+/* --------Profile----------*/
+#profile-wrapper{
+    height: 60vh;
+    position: relative;
+}
+.profile-bg{
+    background-image: url('../images/profile-bg.jpg') ;
+    background-size: cover;    
+    filter: brightness(.4);
+    height: 100%;
+}
+#profile{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#name{
+    color: var(--main-bg-color);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 15px;
+    border: 1.5px solid var(--secondary-bg-color);
+    display: inline-block;
+}
+#name:hover{
+    background-color: rgba(255, 255, 255,.2);
+}
+#tagline{
+    text-transform: uppercase;
+    color: skyblue;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: .1rem;
+}
+@media screen and (min-width:768px){
+    #profile-wrapper{
+        height: 80vh;
+    }
+    #name{
+        font-size: 2rem;
+    }
+}
+
+/*-------Education-------*/
+#education-wrapper{
+    height: 40vh;
+    background-color: var(--main-bg-color);
 }
